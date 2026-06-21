@@ -1,4 +1,4 @@
-import { Sidebar } from "@/src/app/components/layout/Sidebar";
+import { Sidebar } from "@/src/components/layout/Sidebar";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
