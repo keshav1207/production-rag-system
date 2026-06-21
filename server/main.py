@@ -1,14 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-from routers import users
+from routers import users, projects
  
 load_dotenv() 
 
 # Create FastAPI app
 app = FastAPI(
-    title="Six-Figure AI Engineering API",
-    description="Backend API for Six-Figure AI Engineering application",
+    title="Production-RAG-System API",
+    description="Backend API for Production-RAG-System",
     version="1.0.0"
 )
 
@@ -23,12 +23,13 @@ app.add_middleware(
 
 
 app.include_router(users.router) 
+app.include_router(projects.router) 
 
 
 # Health check endpoints
 @app.get("/")
 async def root():
-    return {"message": "Six-Figure AI Engineering app is running!"}
+    return {"message": "Production-RAG-System app is running!"}
 
 @app.get("/health")
 async def health_check():
