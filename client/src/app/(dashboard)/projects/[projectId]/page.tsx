@@ -356,4 +356,3 @@ function ProjectPage({ params }: ProjectPageProps) {
 }
 
 export default ProjectPage;
-
