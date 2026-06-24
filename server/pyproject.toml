@@ -11,7 +11,8 @@ dependencies = [
     "uvicorn (>=0.49.0,<0.50.0)",
     "supabase (>=2.31.0,<3.0.0)",
     "python-dotenv (>=1.2.2,<2.0.0)",
-    "clerk-backend-api (>=6.0.1,<7.0.0)"
+    "clerk-backend-api (>=6.0.1,<7.0.0)",
+    "boto3 (>=1.43.36,<2.0.0)"
 ]
 
 
