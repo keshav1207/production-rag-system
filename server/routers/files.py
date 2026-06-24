@@ -1,7 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
-from database import supabase
+from database import supabase, s3_client, BUCKET_NAME
 from auth import get_current_user
+import uuid
 
 router = APIRouter(
     tags=["files"]
